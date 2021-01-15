@@ -26,14 +26,11 @@ def randomxy (z):   #2차원 배열에서 x좌표는 중복 허용한 랜덤 y�
             HelpCoordinates[0].append(num)
         Coordinates[i] = HelpCoordinates
 randomxy(1000)
-#randomduplicate(1000)
+
 
 Coordinates = list(itertools.chain(*Coordinates)) #3차원리스트를 2차원리스트로
 Coordinates2 = list(itertools.chain(*Coordinates))
 
-#fw.write(str(x))
-#fw.write('\n')
-#Coordinates.sort()정렬
 j=1
 while j<=len(Coordinates2):
     fw.write(str(Coordinates2[j-1])+' ')
